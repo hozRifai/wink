@@ -1,3 +1,4 @@
 Django==1.11.2
 django-hosts==2.0
 pytz==2017.2
+gunicorn==19.7.1
