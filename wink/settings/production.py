@@ -25,7 +25,7 @@ SECRET_KEY = 'flzn(t422drj_sq9+&7i&7&y&^c4(9!e4u3yump0#lwg!)1*4#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.houzayfarifai.com' , 'houzayfarifai.com']
+ALLOWED_HOSTS = ['www.houzayfarifai.com' , 'houzayfarifai.com' , 'wink1.herokuapp.com']
 
 
 # Application definition
