@@ -5,3 +5,4 @@ gunicorn==19.7.1
 pytz==2017.2
 dj-database-url==0.4.2
 psycopg2==2.6.2
+whitenoise==3.3.0
