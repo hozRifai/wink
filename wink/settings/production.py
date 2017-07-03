@@ -23,7 +23,7 @@ SECRET_KEY = 'flzn(t422drj_sq9+&7i&7&y&^c4(9!e4u3yump0#lwg!)1*4#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.houzayfarifai.com' , 'houzayfarifai.com' , 'wink1.herokuapp.com']
+ALLOWED_HOSTS = ['wink1.herokuapp.com']
 
 
 # Application definition
@@ -58,8 +58,8 @@ MIDDLEWARE = [
 ROOT_URLCONF  = 'wink.urls'
 ROOT_HOSTCONF = 'wink.hosts'
 DEFAULT_HOST  = 'www'
-DEFAULT_REDIRECT_URL = "http://www.houzayfarifai.com"
-PARENT_HOST = "houzayfarifai.com"
+DEFAULT_REDIRECT_URL = "https://wink1.herokuapp.com"
+PARENT_HOST = "wink1.herokuapp.com"
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
