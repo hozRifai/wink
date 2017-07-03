@@ -5,10 +5,10 @@ from .validators import validate_url
 class SubmitUrlForm(forms.Form):
 	url = forms.CharField(label="" , validators=[validate_url] , widget=forms.TextInput(
 		attrs={
-			"placeholder":"Long URL", 
+			"placeholder":"http://xxx.xx/xxx/xx/xx", 
 			"class" : "form-control"
 		}))
-	
+
 	#abc 
 	"""
 	def clean(self): # form
