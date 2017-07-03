@@ -44,5 +44,6 @@ class winkURL(models.Model):
 		super(winkURL, self).save(*args, **kwargs)
 
 	def get_short_url(self):
-		url_path = reverse("scode" , kwargs={'shortcode':self.shortcode},host="www" , scheme="http")
-		return url_path
+		#url_path = reverse("scode" , kwargs={'shortcode':self.shortcode} , scheme="http")
+		#return url_path
+		return "wink1.heroku.com/{shortcode}".format(shortcode=self.shortcode)

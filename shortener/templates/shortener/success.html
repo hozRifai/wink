@@ -1,10 +1,9 @@
 {% extends "shortener/base.html"  %}
 {% block content %}
 <div class="text-align" >
-	<h1>Created!</h1>
+	<h1>Created !</h1>
 	<p>{{ object.url }}</p>
 	<div>
-		<!--<a class='btn btn-link' href='{{ object.get_short_url }}'>{{ object.get_short_url }}</a> -->
 		<label for="website">Website:</label>
 		<input type="text" id="website" value="{{ object.get_short_url }}" />
 		<button data-copytarget="#website">copy</button>
