@@ -18,6 +18,15 @@
     .btn-link:hover {
       color: #000000;
     }
+    input, button {
+	  font-size: 1em;
+	  border: 1px solid #333;
+	  outline: 0;
+	  box-shadow: none;
+	}
+	#website {
+		color: black;
+	}
     </style>
     {% endblock styles %}
 </head>
@@ -35,8 +44,48 @@
       </div>
 
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+(function() {
 
+    'use strict';
+  
+  // click events
+  document.body.addEventListener('click', copy, true);
 
+    // event handler
+    function copy(e) {
 
+    // find target element
+    var 
+      t = e.target,
+      c = t.dataset.copytarget,
+      inp = (c ? document.querySelector(c) : null);
+      
+    // is element selectable?
+    if (inp && inp.select) {
+      
+      // select text
+      inp.select();
+
+      try {
+        // copy text
+        document.execCommand('copy');
+        inp.blur();
+        
+        // copied animation
+        t.classList.add('copied');
+        setTimeout(function() { t.classList.remove('copied'); }, 1500);
+      }
+      catch (err) {
+        alert('please press Ctrl/Cmd+C to copy');
+      }
+      
+    }
+    
+    }
+
+})();
+</script>
 </body>
 </html>
